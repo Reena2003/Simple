@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 3vw;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
+            color: rgb(107, 32, 124);
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #f0ebe9;
+
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+        }
+
+        .container:hover .overlay {
+            bottom: 0;
+            height: 100%;
+        }
+
+        .text {
+            white-space: nowrap;
+            color: rgb(95, 103, 224);
+            font-size: 20px;
+            position: absolute;
+            overflow: hidden;
+            font-size: 2vw;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Hover Me</h2>
+
+    <div class="container">
+        <img src="1.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Hey! I Am Tajmahal ❤️</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
